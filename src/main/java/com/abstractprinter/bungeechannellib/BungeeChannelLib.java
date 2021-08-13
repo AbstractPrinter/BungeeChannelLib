@@ -1,7 +1,6 @@
 package com.abstractprinter.bungeechannellib;
 
 import com.abstractprinter.bungeechannellib.channel.BungeeChannelListener;
-import org.bukkit.ChatColor;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
