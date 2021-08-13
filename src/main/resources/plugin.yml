@@ -1,0 +1,5 @@
+name: BungeeChannelLib
+version: @version@
+main: com.abstractprinter.bungeechannellib.BungeeChannelLib
+api-version: 1.15
+prefix: BungeeChannelLib
