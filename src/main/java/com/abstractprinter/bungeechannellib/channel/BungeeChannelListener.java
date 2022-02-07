@@ -44,7 +44,6 @@ public class BungeeChannelListener implements PluginMessageListener {
                 pluginManager.callEvent(new BungeeServerIpEvent(in.readUTF(), in.readUTF(), in.readInt()));
                 break;
             default:
-                throw new RuntimeException("Unrecognized");
         }
     }
 }

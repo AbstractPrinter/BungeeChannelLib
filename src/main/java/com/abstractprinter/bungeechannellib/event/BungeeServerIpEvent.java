@@ -8,10 +8,10 @@ import org.bukkit.event.HandlerList;
  * @author AbstractPrinter
  */
 public class BungeeServerIpEvent extends Event {
-    private static HandlerList handlerList = new HandlerList();
-    private String serverName;
-    private String serverIp;
-    private int port;
+    private static final HandlerList handlerList = new HandlerList();
+    private final String serverName;
+    private final String serverIp;
+    private final int port;
 
     public BungeeServerIpEvent(String serverName, String serverIp, int port) {
         this.serverName = serverName;

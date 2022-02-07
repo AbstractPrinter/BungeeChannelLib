@@ -1,12 +1,13 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group = 'com.abstractprinter'
 version = '1.0.0'
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+sourceCompatibility = '8'
+targetCompatibility = '8'
 
 repositories {
     mavenCentral()
@@ -17,7 +18,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.bukkit:bukkit:1.15.2-R0.1-SNAPSHOT'
+    implementation 'com.google.guava:guava:31.0.1-jre'
+    compileOnly 'org.bukkit:bukkit:1.12.2-R0.1-SNAPSHOT'
 }
 
 processResources {
@@ -31,4 +33,8 @@ processResources {
 
 tasks.withType(Javadoc) {
     options.encoding = "UTF8"
+}
+
+shadowJar {
+    relocate 'com.google', 'me.layue13.com.google.guava30'
 }

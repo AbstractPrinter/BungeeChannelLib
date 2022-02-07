@@ -11,9 +11,9 @@ import java.util.List;
  * @author AbstractPrinter
  */
 public class BungeePlayerListEvent extends Event {
-    private static HandlerList handlerList = new HandlerList();
-    private String serverName;
-    private List<String> playerList;
+    private static final HandlerList handlerList = new HandlerList();
+    private final String serverName;
+    private final List<String> playerList;
 
     public BungeePlayerListEvent(String serverName, String[] playerList) {
         this.serverName = serverName;

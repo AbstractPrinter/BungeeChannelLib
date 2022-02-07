@@ -37,7 +37,6 @@ public final class BungeeChannelLib extends JavaPlugin {
                         "| |    | '_ \\ / _` | '_ \\| '_ \\ / _ \\ | |    | | '_ \\ \n" +
                         "| |____| | | | (_| | | | | | | |  __/ | |____| | |_) |\n" +
                         " \\_____|_| |_|\\__,_|_| |_|_| |_|\\___|_|______|_|_.__/ ");
-        logger.info("Register BungeeChannel.");
         this.getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         this.getServer().getMessenger().registerIncomingPluginChannel(this, "BungeeCord", new BungeeChannelListener());
     }

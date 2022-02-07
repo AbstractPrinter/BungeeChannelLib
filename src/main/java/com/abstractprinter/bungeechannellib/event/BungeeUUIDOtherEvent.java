@@ -8,9 +8,9 @@ import org.bukkit.event.HandlerList;
  * @author AbstractPrinter
  */
 public class BungeeUUIDOtherEvent extends Event {
-    private static HandlerList handlerList = new HandlerList();
-    private String playerName;
-    private String uuid;
+    private static final HandlerList handlerList = new HandlerList();
+    private final String playerName;
+    private final String uuid;
 
     public BungeeUUIDOtherEvent(String playerName, String uuid) {
         this.playerName = playerName;
